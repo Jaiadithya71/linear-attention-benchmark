@@ -47,6 +47,27 @@ if qp is not None:
 qq = load("qwen_quality.csv")
 if qq is not None:
     out += ["\n## Qwen2.5-0.5B quality: WikiText-2 test perplexity (pretrained weights, attention swapped at inference, no training)\n", md(qq.round(4))]
+ae = load("adaptive_efficiency.csv")
+if ae is not None:
+    rc = ["heads_rank64", "heads_rank256", "heads_rank1024", "heads_exact", "heads_tol_not_met"]
+    for (rg, dt), x in ae.groupby(["regime", "dtype"]):
+        out += [f"\n## Adaptive-rank efficiency, regime={rg}, {dt}: median latency (ms)\n", md(x.pivot(index="N", columns="method", values="median_ms").round(3).reset_index()),
+                f"\n## Adaptive-rank efficiency, regime={rg}, {dt}: mean relative L2 error vs exact (per head; blank = not computed)\n", md(x.pivot(index="N", columns="method", values="rel_err_mean_vs_exact").round(4).reset_index()),
+                f"\n## Adaptive-rank efficiency, regime={rg}, {dt}: peak extra memory (MB)\n", md(x.pivot(index="N", columns="method", values="peak_extra_mb").round(1).reset_index())]
+    a = ae[ae.method.str.startswith("adaptive") & (ae.dtype == "fp32")][["regime", "method", "N", "status"] + rc]
+    out += ["\n## Router choices per run (8 heads; fp32 inputs)\n", md(a)]
+ar = load("adaptive_retrieval.csv")
+if ar is not None:
+    out += ["\n## Adaptive-rank retrieval (same seeded trials; 95% Wilson CI; router choices counted per trial)\n",
+            md(ar[["N", "method", "dtype", "beta", "successes", "trials", "accuracy", "wilson95_lo", "wilson95_hi", "nonfinite_outputs", "heads_rank64", "heads_rank256", "heads_rank1024", "heads_exact", "heads_tol_not_met"]].round(3))]
+ap = load("adaptive_qwen_prefill.csv")
+if ap is not None:
+    for col in ("median_ms", "peak_extra_mb"):
+        out += [f"\n## Qwen2.5-0.5B prefill, adaptive vs fixed rank: {col}\n", md(ap.pivot(index="N", columns="variant", values=col).round(2).reset_index())]
+    out += ["\n## Qwen2.5-0.5B router choices during one prefill (heads x layers)\n", md(ap[ap.variant.str.startswith("adaptive")][["variant", "N", "status", "heads_rank64", "heads_rank256", "heads_rank1024", "heads_exact", "heads_tol_not_met"]])]
+aq = load("adaptive_qwen_quality.csv")
+if aq is not None:
+    out += ["\n## Qwen2.5-0.5B WikiText-2 perplexity, adaptive vs fixed rank (pretrained weights, no training)\n", md(aq.round(4))]
 body = "\n".join(out) + "\n"
 open(os.path.join(R, "SUMMARY.md"), "w").write(body)
 if os.path.exists("README.md"):

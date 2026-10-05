@@ -80,8 +80,8 @@ def test_qwen_patch_plumbing_tiny_random_model():
     ids = torch.randint(0, 100, (1, 300))
     calls = []
     orig = qp.make_fn
-    def counting(kind, window=256):
-        f = orig(kind, window)
+    def counting(kind, window=256, tol=0.1):
+        f = orig(kind, window, tol)
         def g(*a, **k):
             calls.append(kind); return f(*a, **k)
         return g

@@ -59,3 +59,16 @@ if os.path.exists(p):
     axs[0].legend()
     fig.tight_layout(); fig.savefig(os.path.join(F, "qwen_prefill.png"), dpi=130); plt.close(fig)
 print("figures written to", F)
+
+p = os.path.join(R, "adaptive_efficiency.csv")
+if os.path.exists(p):
+    d = pd.read_csv(p)
+    d = d[(d.dtype == "fp32") & d.status.eq("ok") & d.method.isin(["sdpa", "rf64", "rf256", "rf1024", "adaptive_rank", "adaptive_rank_fb"])]
+    fig, axs = plt.subplots(1, 2, figsize=(12, 4.5), sharey=True)
+    for ax, rg in zip(axs, ["unit", "mixed"]):
+        for m, g in d[d.regime == rg].groupby("method"):
+            g = g.sort_values("N")
+            ax.errorbar(g.N, g.median_ms, yerr=[g.median_ms - g.q25_ms, g.q75_ms - g.median_ms], label=m, marker="o", ms=3, capsize=2)
+        ax.set_xscale("log", base=2); ax.set_yscale("log"); ax.set_title(f"adaptive-rank latency, regime={rg}, fp32"); ax.set_xlabel("N"); ax.grid(alpha=.3)
+    axs[0].set_ylabel("median ms (IQR)"); axs[1].legend(fontsize=8)
+    fig.tight_layout(); fig.savefig(os.path.join(F, "adaptive_latency.png"), dpi=130); plt.close(fig)

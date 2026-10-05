@@ -27,8 +27,18 @@ Correctness of the implementations is tested on CPU against reference formulas i
 are not benchmarks). `local_window` and `linear` are different functions from softmax attention, so their outputs are not
 expected to match it; the error column quantifies the difference.
 
+## Adaptive-rank linear attention (`lab/adaptive.py`, `run_adaptive.py`)
+"Rank" is the number of positive random features m (FAVOR+-style approximation of the softmax kernel) with m in {64, 256, 1024}.
+The router works per input (per batch element and head): it computes exact softmax attention for 16 probe queries, tries the ranks
+in ascending order, and accepts the first rank whose output on the probes has mean relative L2 error <= tol (fixed at 0.1 before
+any run; a tol sweep is also reported). Inputs that fail every rank are either answered with the largest rank anyway and flagged
+`tol_not_met` (`adaptive_rank`), or with exact attention (`adaptive_rank_fb`). Probe cost and discarded lower-rank attempts count
+in the measured latency and memory. It is compared with fixed-rank `rf64/rf256/rf1024` and exact SDPA on efficiency (two input
+regimes: uniform scale and per-head mixed scales), the retrieval task, and real Qwen2.5-0.5B prefill + perplexity.
+Random-feature attention is computed in fp32 internally for both input dtypes. In retrieval the probe queries are
+`beta * random keys` (same distribution as the real query, never the query itself).
+
 ## Not included
-* **Adaptive-rank linear attention.** Not implemented, so there is no result and no claim about it. (The earlier repo only had a stub.)
 * No causal efficiency sweep; causal attention appears only in the Qwen step.
 * Qwen: the linear and local-window variants are inference-time swaps on weights trained for softmax, with no fine-tuning. The perplexity table shows what that costs. This says nothing about linear attention models trained from scratch.
 
