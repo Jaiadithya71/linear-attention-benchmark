@@ -174,7 +174,7 @@ def part_qwen(args, out):
     need = max(max(args.qwen_Ns), args.ppl_ctx * args.ppl_windows)
     if ids_all.numel() < need:
         raise RuntimeError("corpus too short")
-    names = ["sdpa", "rf64", "rf256", "rf1024", "adaptive_rank", "adaptive_rank_fb"]
+    names = ["sdpa", "sdpa_mha", "rf64", "rf256", "rf1024", "adaptive_rank", "adaptive_rank_fb"]
     kinds = {n: n for n in names}
     pf, qq = [], []
     with torch.no_grad():

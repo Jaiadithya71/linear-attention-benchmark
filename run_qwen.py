@@ -39,7 +39,7 @@ def main():
     need = max(max(args.Ns), args.ppl_ctx * args.ppl_windows)
     if ids_all.numel() < need:
         raise RuntimeError(f"corpus has {ids_all.numel()} tokens, need {need}")
-    variants = ["sdpa", "local_window", "linear"]
+    variants = ["sdpa", "sdpa_mha", "local_window", "linear"]
     pf_rows, q_rows = [], []
     with torch.no_grad():
         for N in args.Ns:

@@ -20,7 +20,9 @@ def make_fn(kind, window=256, tol=0.1):
         if attention_mask is not None:
             raise RuntimeError("patched attention expects attention_mask=None (causal, unpadded prefill)")
         key, value = _expand_kv(query, key, value)
-        if kind == "local_window":
+        if kind == "sdpa_mha":
+            out = A.sdpa_attention(query, key, value, causal=True)
+        elif kind == "local_window":
             out = A.local_window_attention(query, key, value, window=window, causal=True)
         elif kind == "linear":
             out = A.linear_attention(query, key, value, causal=True, acc_dtype=torch.float32)
@@ -48,7 +50,7 @@ def patched_attention(kind, window=256, tol=0.1):
     from transformers import AttentionInterface
     from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
     original = ALL_ATTENTION_FUNCTIONS["sdpa"]
-    if kind != "sdpa":
+    if kind != "sdpa":  # "sdpa" = transformers' own default path, untouched
         AttentionInterface.register("sdpa", make_fn(kind, window, tol))
     try:
         yield

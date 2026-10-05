@@ -1,0 +1,43 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:46,  2.72it/s]Loading weights:  51%|█████     | 147/290 [00:00<00:00, 405.57it/s]Loading weights:  79%|███████▉  | 230/290 [00:00<00:00, 452.57it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 381.34it/s]
+GPU: Tesla T4 | model Qwen/Qwen2.5-0.5B layers 24 heads 14 kv_heads 2
+Traceback (most recent call last):
+  File "/content/linear-attention-benchmark/run_qwen.py", line 87, in <module>
+    main()
+    ~~~~^^
+  File "/content/linear-attention-benchmark/run_qwen.py", line 37, in main
+    text = "\n\n".join(load_dataset("wikitext", "wikitext-2-raw-v1", split="test")["text"])
+                       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1688, in load_dataset
+    builder_instance = load_dataset_builder(
+        path=path,
+    ...<10 lines>...
+        **config_kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1315, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+        path,
+    ...<5 lines>...
+        cache_dir=cache_dir,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1207, in dataset_module_factory
+    raise e1 from None
+  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1182, in dataset_module_factory
+    ).get_module()
+      ~~~~~~~~~~^^
+  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 598, in get_module
+    standalone_yaml_path = cached_path(
+        hf_dataset_url(self.name, config.REPOYAML_FILENAME, revision=self.commit_hash),
+        download_config=download_config,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/datasets/utils/file_utils.py", line 180, in cached_path
+    ).resolve_path(url_or_filename)
+      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/hf_file_system.py", line 306, in resolve_path
+    parsed = parse_hf_uri(f"{constants.HF_PROTOCOL}{path}")
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_hf_uris.py", line 319, in parse_hf_uri
+    return _parse_repo_body(location, type_, raw=raw)
+  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_hf_uris.py", line 617, in _parse_repo_body
+    raise HfUriError(uri=raw, msg=f"Repository id must be 'namespace/name', got '{repo_id}'.")
+huggingface_hub.errors.HfUriError: Invalid HF URI 'hf://datasets/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml'. Repository id must be 'namespace/name', got 'wikitext'.
