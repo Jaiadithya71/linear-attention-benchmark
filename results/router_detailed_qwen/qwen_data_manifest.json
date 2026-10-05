@@ -1,0 +1,10 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "model_revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+  "corpus": "Salesforce/wikitext:wikitext-2-raw-v1:test",
+  "corpus_token_sha256": "8ffcee84dd4b684ec631cb52845e18c9c181ce6fdb8b26d65a4ffdc3d35fbda3",
+  "calibration_windows": 2,
+  "evaluation_windows": 16,
+  "ctx": 2048,
+  "eval_start_token": 4096
+}

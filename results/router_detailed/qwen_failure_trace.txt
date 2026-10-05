@@ -1,0 +1,108 @@
+6886291503906, 'q25_ms': 150.41346740722656, 'q75_ms': 151.25917053222656, 'min_ms': 149.5463104248047, 'reps': 5, 'warmup': 1, 'wall_call_ms': 152.47996900052385, 'peak_extra_mb': 1089.00146484375, 'peak_total_mb': 1290.15966796875, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'cached_same', 'finite_output': True, 'median_ms': 70.94886779785156, 'q25_ms': 70.43523406982422, 'q75_ms': 70.9532470703125, 'min_ms': 70.29090881347656, 'reps': 5, 'warmup': 1, 'wall_call_ms': 70.71166599962453, 'peak_extra_mb': 1089.00048828125, 'peak_total_mb': 1290.15869140625, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'selection_only', 'finite_output': True, 'median_ms': 87.86589050292969, 'q25_ms': 87.22835540771484, 'q75_ms': 88.2524185180664, 'min_ms': 86.99241638183594, 'reps': 5, 'warmup': 1, 'wall_call_ms': 90.6440909993762, 'peak_extra_mb': 769.06494140625, 'peak_total_mb': 970.22314453125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'original_router', 'finite_output': True, 'median_ms': 112.30668640136719, 'q25_ms': 112.1731185913086, 'q75_ms': 112.31689453125, 'min_ms': 110.63008117675781, 'reps': 5, 'warmup': 1, 'wall_call_ms': 112.09850100021868, 'peak_extra_mb': 1153.0966796875, 'peak_total_mb': 1354.2548828125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_2_calls', 'finite_output': True, 'median_ms': 223.4468536376953, 'q25_ms': 223.4215087890625, 'q75_ms': 224.1183319091797, 'min_ms': 223.06396484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 223.84204199988744, 'peak_extra_mb': 1153.0009765625, 'peak_total_mb': 1354.1591796875, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_4_calls', 'finite_output': True, 'median_ms': 365.66064453125, 'q25_ms': 365.63116455078125, 'q75_ms': 366.23431396484375, 'min_ms': 363.561279296875, 'reps': 5, 'warmup': 1, 'wall_call_ms': 369.37196499911806, 'peak_extra_mb': 1153.0009765625, 'peak_total_mb': 1354.1591796875, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_8_calls', 'finite_output': True, 'median_ms': 647.1265258789062, 'q25_ms': 646.3388671875, 'q75_ms': 648.1414794921875, 'min_ms': 646.1358032226562, 'reps': 5, 'warmup': 1, 'wall_call_ms': 638.7233509994985, 'peak_extra_mb': 1153.0009765625, 'peak_total_mb': 1354.1591796875, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf64', 'finite_output': True, 'median_ms': 36.602752685546875, 'q25_ms': 36.371360778808594, 'q75_ms': 37.3394889831543, 'min_ms': 36.361854553222656, 'reps': 5, 'warmup': 1, 'wall_call_ms': 36.45286699975259, 'peak_extra_mb': 514.12744140625, 'peak_total_mb': 715.28564453125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf256', 'finite_output': True, 'median_ms': 69.6259536743164, 'q25_ms': 69.33708953857422, 'q75_ms': 69.67743682861328, 'min_ms': 69.22470092773438, 'reps': 5, 'warmup': 1, 'wall_call_ms': 69.81964899932791, 'peak_extra_mb': 1089.00048828125, 'peak_total_mb': 1290.15869140625, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 32768, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf1024', 'finite_output': True, 'median_ms': 270.5903015136719, 'q25_ms': 270.0574645996094, 'q75_ms': 271.41497802734375, 'min_ms': 269.10302734375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 268.3403510000062, 'peak_extra_mb': 912.25048828125, 'peak_total_mb': 1113.40869140625, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'sdpa', 'finite_output': True, 'median_ms': 1978.63916015625, 'q25_ms': 1975.2614135742188, 'q75_ms': 1978.941650390625, 'min_ms': 1971.8836669921875, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1970.5676679996031, 'peak_extra_mb': 128.0, 'peak_total_mb': 521.158203125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'probe_first', 'finite_output': True, 'median_ms': 144.65855407714844, 'q25_ms': 143.49107360839844, 'q75_ms': 144.9144287109375, 'min_ms': 143.2572479248047, 'reps': 5, 'warmup': 1, 'wall_call_ms': 143.07168100003764, 'peak_extra_mb': 1026.12841796875, 'peak_total_mb': 1419.28662109375, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'cached_same', 'finite_output': True, 'median_ms': 72.9007339477539, 'q25_ms': 72.28886413574219, 'q75_ms': 74.13555145263672, 'min_ms': 72.27391815185547, 'reps': 5, 'warmup': 1, 'wall_call_ms': 73.94672299960803, 'peak_extra_mb': 1026.12744140625, 'peak_total_mb': 1419.28564453125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'selection_only', 'finite_output': True, 'median_ms': 72.1088638305664, 'q25_ms': 72.09961700439453, 'q75_ms': 72.30464172363281, 'min_ms': 71.71087646484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 73.4990929995547, 'peak_extra_mb': 770.033203125, 'peak_total_mb': 1163.19140625, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'original_router', 'finite_output': True, 'median_ms': 83.57769775390625, 'q25_ms': 82.8384017944336, 'q75_ms': 83.78224182128906, 'min_ms': 82.30355072021484, 'reps': 5, 'warmup': 1, 'wall_call_ms': 82.1559010000783, 'peak_extra_mb': 1026.19140625, 'peak_total_mb': 1419.349609375, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_2_calls', 'finite_output': True, 'median_ms': 216.8895721435547, 'q25_ms': 214.16549682617188, 'q75_ms': 218.0509490966797, 'min_ms': 213.37353515625, 'reps': 5, 'warmup': 1, 'wall_call_ms': 221.70940299929498, 'peak_extra_mb': 1154.1279296875, 'peak_total_mb': 1547.2861328125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_4_calls', 'finite_output': True, 'median_ms': 360.88494873046875, 'q25_ms': 359.5068054199219, 'q75_ms': 361.7177734375, 'min_ms': 359.4360656738281, 'reps': 5, 'warmup': 1, 'wall_call_ms': 377.0345700004327, 'peak_extra_mb': 1154.1279296875, 'peak_total_mb': 1547.2861328125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'choose_once_8_calls', 'finite_output': True, 'median_ms': 664.8460083007812, 'q25_ms': 653.201416015625, 'q75_ms': 675.2237548828125, 'min_ms': 648.322021484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 650.7378260002952, 'peak_extra_mb': 1154.1279296875, 'peak_total_mb': 1547.2861328125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf64', 'finite_output': True, 'median_ms': 72.91085052490234, 'q25_ms': 72.170654296875, 'q75_ms': 73.1214370727539, 'min_ms': 71.9491195678711, 'reps': 5, 'warmup': 1, 'wall_call_ms': 77.4835020001774, 'peak_extra_mb': 1026.12744140625, 'peak_total_mb': 1419.28564453125, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf256', 'finite_output': True, 'median_ms': 166.87718200683594, 'q25_ms': 165.84962463378906, 'q75_ms': 166.93055725097656, 'min_ms': 163.83021545410156, 'reps': 5, 'warmup': 1, 'wall_call_ms': 165.15757800061692, 'peak_extra_mb': 1217.00048828125, 'peak_total_mb': 1610.15869140625, 'status': 'ok'}
+TIMING {'regime': 'rare_sharp', 'N': 65536, 'causal': True, 'dtype': 'torch.float32', 'seed': 1234, 'tol': 0.1, 'n_probe': 16, 'method': 'rf1024', 'finite_output': True, 'median_ms': 582.8013916015625, 'q25_ms': 582.1104125976562, 'q75_ms': 585.32421875, 'min_ms': 580.3663330078125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 580.0666880004428, 'peak_extra_mb': 976.25048828125, 'peak_total_mb': 1369.40869140625, 'status': 'ok'}
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights: 100%|██████████| 290/290 [00:00<00:00, 622.41it/s]
+Generating test split: 100%|██████████| 4358/4358 [00:00<00:00, 39332.46 examples/s]
+Generating train split: 100%|██████████| 36718/36718 [00:00<00:00, 687605.56 examples/s]
+Generating validation split: 100%|██████████| 3760/3760 [00:00<00:00, 616303.22 examples/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+Traceback (most recent call last):
+  File "/kaggle/working/linear-attention-benchmark/run_router_detailed.py", line 305, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/kaggle/working/linear-attention-benchmark/run_router_detailed.py", line 301, in main
+    globals()[part](args,out)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/kaggle/working/linear-attention-benchmark/run_router_detailed.py", line 242, in qwen
+    with model_patch('capture',capture=capture):model.model(input_ids=ids[win*ctx:(win+1)*ctx][None].cuda(),use_cache=False)
+                                                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/generic.py", line 1068, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 388, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<5 lines>...
+        **kwargs,
+    )
+  File "/usr/local/lib/python3.13/dist-packages/transformers/modeling_layers.py", line 114, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 282, in forward
+    hidden_states, _ = self.self_attn(
+                       ~~~~~~~~~~~~~~^
+        hidden_states=hidden_states,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2/modeling_qwen2.py", line 220, in forward
+    attn_output, attn_weights = attention_interface(
+                                ~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/kaggle/working/linear-attention-benchmark/run_router_detailed.py", line 199, in fn
+    q,k,v=_expand_kv(q,k,v)
+    ^^^^^
+ValueError: not enough values to unpack (expected 3, got 2)
+
+---------------------------------------------------------------------------
+CalledProcessError                        Traceback (most recent call last)
+/tmp/ipykernel_23/1504243163.py in <cell line: 0>()
+      8 subprocess.run(["python", "-m", "pip", "install", "-q", "-r", "requirements.txt"],check=True)
+      9 subprocess.run(["python", "-m", "pytest", "-q", "tests"],check=True)
+---> 10 subprocess.run(["python", "run_router_detailed.py"],check=True)
+     11 print("ROUTER_DETAILED_COMPLETE")
+
+/usr/lib/python3.13/subprocess.py in run(input, capture_output, timeout, check, *popenargs, **kwargs)
+    575         retcode = process.poll()
+    576         if check and retcode:
+--> 577             raise CalledProcessError(retcode, process.args,
+    578                                      output=stdout, stderr=stderr)
+    579     return CompletedProcess(process.args, retcode, stdout, stderr)
+
+CalledProcessError: Command '['python', 'run_router_detailed.py']' returned non-zero exit status 1.

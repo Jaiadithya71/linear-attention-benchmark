@@ -1,3 +1,7 @@
+# Detailed adaptive-rank follow-up
+
+The completed, measured follow-up is in [SUMMARY.md](SUMMARY.md): synthetic tolerance/probe/scale sweeps, real Qwen captures and matched perplexity, cache drift, long-context curves, and preserved failures. The router does not accelerate Qwen in the measured 1k-8k range; synthetic wins at very long lengths are conditional, not an accuracy guarantee. The earlier report below is retained as historical context and its broader router verdict is superseded by the detailed follow-up.
+
 # linear-attention-benchmark
 
 Measured comparison of softmax, PyTorch SDPA, local-window ("sparse") and kernelized linear attention

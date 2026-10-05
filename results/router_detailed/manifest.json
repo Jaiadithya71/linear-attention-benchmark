@@ -1,0 +1,107 @@
+{
+  "stage": "router_detailed",
+  "started_utc": "2026-10-05T13:07:45+00:00",
+  "finished_utc": null,
+  "gpu_name": "Tesla T4",
+  "gpu_total_memory_bytes": 15636037632,
+  "gpu_compute_capability": "7.5",
+  "torch_version": "2.11.0+cu128",
+  "cuda_version": "12.8",
+  "cudnn_version": 91900,
+  "python_version": "3.13.15",
+  "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+  "transformers_version": "5.16.1",
+  "git_commit": "68960abfe106910322ec159ba9806e0eec678457",
+  "git_dirty": true,
+  "argv": [
+    "run_router_detailed.py"
+  ],
+  "args": {
+    "out": "results/router_detailed",
+    "parts": [
+      "sensitivity",
+      "scaling",
+      "qwen"
+    ],
+    "reps": 5,
+    "Ns": [
+      512,
+      1024,
+      2048,
+      4096,
+      8192,
+      16384,
+      32768,
+      65536
+    ]
+  },
+  "regimes": [
+    "scale_0.1",
+    "scale_0.2",
+    "scale_0.25",
+    "scale_0.3",
+    "scale_0.4",
+    "scale_0.5",
+    "scale_0.75",
+    "scale_1.0",
+    "mix_easy",
+    "mix_broad",
+    "lowrank_easy",
+    "lowrank_unit",
+    "cluster_easy",
+    "cluster_unit",
+    "local_global_easy",
+    "local_global_unit",
+    "rare_sharp",
+    "rare_sharp_shift"
+  ],
+  "tols": [
+    0.01,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4
+  ],
+  "probes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "seeds": [
+    1234,
+    2345,
+    3456
+  ],
+  "scaling_regimes": [
+    "scale_0.25",
+    "scale_0.4",
+    "mix_easy",
+    "lowrank_easy",
+    "local_global_easy",
+    "rare_sharp"
+  ],
+  "qwen_layers": [
+    0,
+    6,
+    12,
+    18,
+    23
+  ],
+  "post_result_changes": [],
+  "source_sha256": {
+    "/kaggle/working/linear-attention-benchmark/run_router_detailed.py": "008239cc04c9952e00abb1d2085409eae2f97421ccdd89bf08e053fac6c6b596",
+    "lab/router_detailed.py": "2a819ed9ed1cf74c61987c4ad8f0110c471d3231418ab4cdd7e4b45bbf805ef4",
+    "lab/adaptive.py": "62cf70976b8b43acf022b640a3d02ad8646f4e626c26eec1c141b123a36e0515"
+  },
+  "completed_parts": [
+    "sensitivity",
+    "scaling"
+  ]
+}

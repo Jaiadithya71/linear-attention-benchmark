@@ -1,0 +1,168 @@
+7.4s	1	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+7.4s	2	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+7.4s	3	0.00s - to python to disable frozen modules.
+7.4s	4	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+8.1s	5	0.00s - Debugger warning: It seems that frozen modules are being used, which may
+8.1s	6	0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+8.1s	7	0.00s - to python to disable frozen modules.
+8.1s	8	0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+16.7s	9	HARDWARE Tesla T4 2.11.0+cu128
+16.7s	10	Cloning into '/kaggle/working/linear-attention-benchmark'...
+16.9s	11	Cloning into '/kaggle/working/linear-attention-benchmark'...
+16.9s	12	
+16.9s	13	Cloning into '/kaggle/working/linear-attention-benchmark'...
+17.6s	14	Note: switching to '68960ab'.
+17.6s	15	
+17.6s	16	You are in 'detached HEAD' state. You can look around, make experimental
+17.6s	17	changes and commit them, and you can discard any commits you make in this
+17.6s	18	state without impacting any branches by switching back to a branch.
+17.6s	19	
+17.6s	20	If you want to create a new branch to retain commits you create, you may
+17.6s	21	do so (now or later) by using -c with the switch command. Example:
+17.6s	22	
+17.6s	23	  git switch -c <new-branch-name>
+17.6s	24	
+17.6s	25	Or undo this operation with:
+17.6s	26	
+17.6s	27	  git switch -
+17.6s	28	
+17.6s	29	Turn off this advice by setting config variable advice.detachedHead to false
+17.6s	30	
+17.6s	31	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
+17.8s	32	Note: switching to '68960ab'.
+17.8s	33	
+17.8s	34	You are in 'detached HEAD' state. You can look around, make experimental
+17.8s	35	changes and commit them, and you can discard any commits you make in this
+17.8s	36	state without impacting any branches by switching back to a branch.
+17.8s	37	
+17.8s	38	If you want to create a new branch to retain commits you create, you may
+17.8s	39	do so (now or later) by using -c with the switch command. Example:
+17.8s	40	
+17.8s	41	  git switch -c <new-branch-name>
+17.8s	42	
+17.8s	43	Or undo this operation with:
+17.8s	44	
+17.8s	45	  git switch -
+17.8s	46	
+17.8s	47	Turn off this advice by setting config variable advice.detachedHead to false
+17.8s	48	
+17.8s	49	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
+17.8s	50	
+17.8s	51	Note: switching to '68960ab'.
+17.8s	52	
+17.8s	53	You are in 'detached HEAD' state. You can look around, make experimental
+17.8s	54	changes and commit them, and you can discard any commits you make in this
+17.8s	55	state without impacting any branches by switching back to a branch.
+17.8s	56	
+17.8s	57	If you want to create a new branch to retain commits you create, you may
+17.8s	58	do so (now or later) by using -c with the switch command. Example:
+17.8s	59	
+17.8s	60	  git switch -c <new-branch-name>
+17.8s	61	
+17.8s	62	Or undo this operation with:
+17.8s	63	
+17.8s	64	  git switch -
+17.8s	65	
+17.8s	66	Turn off this advice by setting config variable advice.detachedHead to false
+17.8s	67	
+17.8s	68	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
+48.9s	69	.......................................                                                   [100%].....                                                   [100%]
+48.9s	70	22 passed in 24.11s
+49.1s	71	
+49.1s	72	22 passed in 24.11s
+62.6s	73	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+62.8s	74	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+62.8s	75	
+62.8s	76	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+64.4s	77	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+64.6s	78	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+64.6s	79	
+64.6s	80	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+73.2s	81	
+73.4s	82	
+73.5s	83	
+73.5s	84	
+73.5s	85	
+77.5s	86	
+77.6s	87	
+77.6s	88	
+77.6s	89	
+77.6s	90	
+77.6s	91	
+77.6s	92	
+77.6s	93	
+77.6s	94	
+77.6s	95	
+78.8s	96	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+79.0s	97	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+79.0s	98	
+79.0s	99	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+81.8s	100	QWEN CAPTURE 0
+82.0s	101	QWEN CAPTURE 0
+83.3s	102	QWEN CAPTURE 1
+83.5s	103	QWEN CAPTURE 1
+84.7s	104	QWEN CAPTURE 2
+84.9s	105	QWEN CAPTURE 2
+86.1s	106	QWEN CAPTURE 3
+86.3s	107	QWEN CAPTURE 3
+88.6s	108	QWEN PPL baseline 0.1 2.576077430028128 13.14547285842414
+88.8s	109	QWEN PPL baseline 0.1 2.576077430028128 13.14547285842414
+89.3s	110	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 48.73481750488281, 'q25_ms': 48.71775817871094, 'q75_ms': 48.77900695800781, 'min_ms': 48.63520050048828, 'reps': 5, 'warmup': 1, 'wall_call_ms': 48.586023999973804, 'peak_extra_mb': 35.7578125, 'peak_total_mb': 2192.416015625, 'status': 'ok'}
+89.5s	111	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 48.73481750488281, 'q25_ms': 48.71775817871094, 'q75_ms': 48.77900695800781, 'min_ms': 48.63520050048828, 'reps': 5, 'warmup': 1, 'wall_call_ms': 48.586023999973804, 'peak_extra_mb': 35.7578125, 'peak_total_mb': 2192.416015625, 'status': 'ok'}
+90.5s	112	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 105.32659149169922, 'q25_ms': 105.2221450805664, 'q75_ms': 105.60844421386719, 'min_ms': 104.63276672363281, 'reps': 5, 'warmup': 1, 'wall_call_ms': 106.22694300002422, 'peak_extra_mb': 74.515625, 'peak_total_mb': 2231.181640625, 'status': 'ok'}
+90.8s	113	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 105.32659149169922, 'q25_ms': 105.2221450805664, 'q75_ms': 105.60844421386719, 'min_ms': 104.63276672363281, 'reps': 5, 'warmup': 1, 'wall_call_ms': 106.22694300002422, 'peak_extra_mb': 74.515625, 'peak_total_mb': 2231.181640625, 'status': 'ok'}
+93.0s	114	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 227.33062744140625, 'q25_ms': 227.0552978515625, 'q75_ms': 228.0160675048828, 'min_ms': 226.79574584960938, 'reps': 5, 'warmup': 1, 'wall_call_ms': 226.50429699996266, 'peak_extra_mb': 143.03125, 'peak_total_mb': 2299.712890625, 'status': 'ok'}
+93.2s	115	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 227.33062744140625, 'q25_ms': 227.0552978515625, 'q75_ms': 228.0160675048828, 'min_ms': 226.79574584960938, 'reps': 5, 'warmup': 1, 'wall_call_ms': 226.50429699996266, 'peak_extra_mb': 143.03125, 'peak_total_mb': 2299.712890625, 'status': 'ok'}
+98.8s	116	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 555.0448608398438, 'q25_ms': 554.4489135742188, 'q75_ms': 557.017333984375, 'min_ms': 553.0439453125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 554.883416999985, 'peak_extra_mb': 286.0625, 'peak_total_mb': 2442.775390625, 'status': 'ok'}
+99.0s	117	TIMING {'mode': 'baseline', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'baseline', 'finite_output': True, 'median_ms': 555.0448608398438, 'q25_ms': 554.4489135742188, 'q75_ms': 557.017333984375, 'min_ms': 553.0439453125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 554.883416999985, 'peak_extra_mb': 286.0625, 'peak_total_mb': 2442.775390625, 'status': 'ok'}
+117.1s	118	QWEN PPL original 0.1 2.576135513313118 13.146236412845166
+117.3s	119	QWEN PPL original 0.1 2.576135513313118 13.146236412845166
+122.3s	120	TIMING {'mode': 'original', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 493.7543640136719, 'q25_ms': 492.641357421875, 'q75_ms': 499.5373840332031, 'min_ms': 492.3275146484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 504.1787119999981, 'peak_extra_mb': 210.9794921875, 'peak_total_mb': 2367.6376953125, 'status': 'ok'}
+122.5s	121	TIMING {'mode': 'original', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 493.7543640136719, 'q25_ms': 492.641357421875, 'q75_ms': 499.5373840332031, 'min_ms': 492.3275146484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 504.1787119999981, 'peak_extra_mb': 210.9794921875, 'peak_total_mb': 2367.6376953125, 'status': 'ok'}
+131.4s	122	TIMING {'mode': 'original', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 1105.9931640625, 'q25_ms': 1104.2339477539062, 'q75_ms': 1107.4306030273438, 'min_ms': 1102.4747314453125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1105.0964259999887, 'peak_extra_mb': 533.68359375, 'peak_total_mb': 2690.349609375, 'status': 'ok'}
+131.6s	123	TIMING {'mode': 'original', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 1105.9931640625, 'q25_ms': 1104.2339477539062, 'q75_ms': 1107.4306030273438, 'min_ms': 1102.4747314453125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1105.0964259999887, 'peak_extra_mb': 533.68359375, 'peak_total_mb': 2690.349609375, 'status': 'ok'}
+154.1s	124	TIMING {'mode': 'original', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 2810.79150390625, 'q25_ms': 2801.5673828125, 'q75_ms': 2814.9686279296875, 'min_ms': 2792.34326171875, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2825.373152999987, 'peak_extra_mb': 1965.19921875, 'peak_total_mb': 4121.880859375, 'status': 'ok'}
+154.3s	125	TIMING {'mode': 'original', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 2810.79150390625, 'q25_ms': 2801.5673828125, 'q75_ms': 2814.9686279296875, 'min_ms': 2792.34326171875, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2825.373152999987, 'peak_extra_mb': 1965.19921875, 'peak_total_mb': 4121.880859375, 'status': 'ok'}
+223.1s	126	TIMING {'mode': 'original', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 8587.9228515625, 'q25_ms': 8563.64404296875, 'q75_ms': 8606.73388671875, 'min_ms': 8539.365234375, 'reps': 3, 'warmup': 0, 'wall_call_ms': 8718.33475400001, 'peak_extra_mb': 7546.23046875, 'peak_total_mb': 9702.943359375, 'status': 'ok'}
+223.3s	127	TIMING {'mode': 'original', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'original', 'finite_output': True, 'median_ms': 8587.9228515625, 'q25_ms': 8563.64404296875, 'q75_ms': 8606.73388671875, 'min_ms': 8539.365234375, 'reps': 3, 'warmup': 0, 'wall_call_ms': 8718.33475400001, 'peak_extra_mb': 7546.23046875, 'peak_total_mb': 9702.943359375, 'status': 'ok'}
+236.7s	128	QWEN PPL oneshot 0.1 2.576186761078045 13.146910145342018
+236.9s	129	QWEN PPL oneshot 0.1 2.576186761078045 13.146910145342018
+241.4s	130	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 441.4735107421875, 'q25_ms': 437.6093444824219, 'q75_ms': 444.39337158203125, 'min_ms': 432.7833251953125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 444.1895209999984, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+241.6s	131	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 441.4735107421875, 'q25_ms': 437.6093444824219, 'q75_ms': 444.39337158203125, 'min_ms': 432.7833251953125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 444.1895209999984, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+249.6s	132	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 792.2704467773438, 'q25_ms': 790.1504516601562, 'q75_ms': 797.9865112304688, 'min_ms': 789.9482421875, 'reps': 5, 'warmup': 1, 'wall_call_ms': 807.8165719999788, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+249.8s	133	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 792.2704467773438, 'q25_ms': 790.1504516601562, 'q75_ms': 797.9865112304688, 'min_ms': 789.9482421875, 'reps': 5, 'warmup': 1, 'wall_call_ms': 807.8165719999788, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+261.1s	134	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1401.1021728515625, 'q25_ms': 1398.3865966796875, 'q75_ms': 1404.2265014648438, 'min_ms': 1395.6710205078125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1409.9900030000754, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+261.3s	135	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1401.1021728515625, 'q25_ms': 1398.3865966796875, 'q75_ms': 1404.2265014648438, 'min_ms': 1395.6710205078125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1409.9900030000754, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+281.3s	136	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2460.557373046875, 'q25_ms': 2457.8887939453125, 'q75_ms': 2470.486572265625, 'min_ms': 2455.22021484375, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2502.241798, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+281.5s	137	TIMING {'mode': 'oneshot', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2460.557373046875, 'q25_ms': 2457.8887939453125, 'q75_ms': 2470.486572265625, 'min_ms': 2455.22021484375, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2502.241798, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+295.0s	138	QWEN PPL oneshot 0.2 2.578720510209777 13.18026335399583
+295.2s	139	QWEN PPL oneshot 0.2 2.578720510209777 13.18026335399583
+299.5s	140	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 428.8238220214844, 'q25_ms': 426.17352294921875, 'q75_ms': 429.45330810546875, 'min_ms': 425.2195739746094, 'reps': 5, 'warmup': 1, 'wall_call_ms': 428.6305130000301, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+299.7s	141	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 428.8238220214844, 'q25_ms': 426.17352294921875, 'q75_ms': 429.45330810546875, 'min_ms': 425.2195739746094, 'reps': 5, 'warmup': 1, 'wall_call_ms': 428.6305130000301, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+307.9s	142	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 804.506103515625, 'q25_ms': 799.7442016601562, 'q75_ms': 807.6060180664062, 'min_ms': 790.3583984375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 835.9808619999285, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+308.1s	143	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 804.506103515625, 'q25_ms': 799.7442016601562, 'q75_ms': 807.6060180664062, 'min_ms': 790.3583984375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 835.9808619999285, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+319.5s	144	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1400.5062255859375, 'q25_ms': 1398.7418823242188, 'q75_ms': 1417.6857299804688, 'min_ms': 1396.9775390625, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1403.8909259999173, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+319.7s	145	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1400.5062255859375, 'q25_ms': 1398.7418823242188, 'q75_ms': 1417.6857299804688, 'min_ms': 1396.9775390625, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1403.8909259999173, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+339.8s	146	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2504.28662109375, 'q25_ms': 2492.0755615234375, 'q75_ms': 2512.5224609375, 'min_ms': 2479.864501953125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2511.9764119999672, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+340.0s	147	TIMING {'mode': 'oneshot', 'tol': 0.2, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2504.28662109375, 'q25_ms': 2492.0755615234375, 'q75_ms': 2512.5224609375, 'min_ms': 2479.864501953125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2511.9764119999672, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+353.5s	148	QWEN PPL oneshot 0.4 2.624158224712422 13.792958726151161
+353.7s	149	QWEN PPL oneshot 0.4 2.624158224712422 13.792958726151161
+358.1s	150	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 429.56689453125, 'q25_ms': 426.9664611816406, 'q75_ms': 430.74310302734375, 'min_ms': 426.89013671875, 'reps': 5, 'warmup': 1, 'wall_call_ms': 437.20954100001563, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+358.3s	151	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 429.56689453125, 'q25_ms': 426.9664611816406, 'q75_ms': 430.74310302734375, 'min_ms': 426.89013671875, 'reps': 5, 'warmup': 1, 'wall_call_ms': 437.20954100001563, 'peak_extra_mb': 147.92431640625, 'peak_total_mb': 2304.58251953125, 'status': 'ok'}
+366.6s	152	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 808.95703125, 'q25_ms': 806.257080078125, 'q75_ms': 811.7726440429688, 'min_ms': 805.021484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 824.1136660000166, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+366.8s	153	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 808.95703125, 'q25_ms': 806.257080078125, 'q75_ms': 811.7726440429688, 'min_ms': 805.021484375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 824.1136660000166, 'peak_extra_mb': 295.73681640625, 'peak_total_mb': 2452.40283203125, 'status': 'ok'}
+378.0s	154	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1414.8897705078125, 'q25_ms': 1399.2068481445312, 'q75_ms': 1423.3217163085938, 'min_ms': 1383.52392578125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1399.0043790000755, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+378.2s	155	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 1414.8897705078125, 'q25_ms': 1399.2068481445312, 'q75_ms': 1423.3217163085938, 'min_ms': 1383.52392578125, 'reps': 3, 'warmup': 0, 'wall_call_ms': 1399.0043790000755, 'peak_extra_mb': 591.36181640625, 'peak_total_mb': 2748.04345703125, 'status': 'ok'}
+398.6s	156	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2521.880615234375, 'q25_ms': 2510.493408203125, 'q75_ms': 2527.67333984375, 'min_ms': 2499.106201171875, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2579.322843, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+398.8s	157	TIMING {'mode': 'oneshot', 'tol': 0.4, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'oneshot', 'finite_output': True, 'median_ms': 2521.880615234375, 'q25_ms': 2510.493408203125, 'q75_ms': 2527.67333984375, 'min_ms': 2499.106201171875, 'reps': 3, 'warmup': 0, 'wall_call_ms': 2579.322843, 'peak_extra_mb': 750.42431640625, 'peak_total_mb': 2907.13720703125, 'status': 'ok'}
+403.4s	158	QWEN PPL cached 0.1 2.576077430028128 13.14547285842414
+403.6s	159	QWEN PPL cached 0.1 2.576077430028128 13.14547285842414
+404.3s	160	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 66.81430053710938, 'q25_ms': 66.45661163330078, 'q75_ms': 66.86131286621094, 'min_ms': 66.10594940185547, 'reps': 5, 'warmup': 1, 'wall_call_ms': 66.55470700002297, 'peak_extra_mb': 35.7578125, 'peak_total_mb': 2192.427734375, 'status': 'ok'}
+404.5s	161	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 1024, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 66.81430053710938, 'q25_ms': 66.45661163330078, 'q75_ms': 66.86131286621094, 'min_ms': 66.10594940185547, 'reps': 5, 'warmup': 1, 'wall_call_ms': 66.55470700002297, 'peak_extra_mb': 35.7578125, 'peak_total_mb': 2192.427734375, 'status': 'ok'}
+406.0s	162	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 143.37020874023438, 'q25_ms': 142.99136352539062, 'q75_ms': 143.39686584472656, 'min_ms': 142.497314453125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 143.36906699998053, 'peak_extra_mb': 74.515625, 'peak_total_mb': 2231.193359375, 'status': 'ok'}
+406.2s	163	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 2048, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 143.37020874023438, 'q25_ms': 142.99136352539062, 'q75_ms': 143.39686584472656, 'min_ms': 142.497314453125, 'reps': 5, 'warmup': 1, 'wall_call_ms': 143.36906699998053, 'peak_extra_mb': 74.515625, 'peak_total_mb': 2231.193359375, 'status': 'ok'}
+409.2s	164	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 302.88079833984375, 'q25_ms': 301.1769714355469, 'q75_ms': 303.2209777832031, 'min_ms': 301.1625061035156, 'reps': 5, 'warmup': 1, 'wall_call_ms': 305.43498199995156, 'peak_extra_mb': 143.03125, 'peak_total_mb': 2299.724609375, 'status': 'ok'}
+409.4s	165	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 4096, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 302.88079833984375, 'q25_ms': 301.1769714355469, 'q75_ms': 303.2209777832031, 'min_ms': 301.1625061035156, 'reps': 5, 'warmup': 1, 'wall_call_ms': 305.43498199995156, 'peak_extra_mb': 143.03125, 'peak_total_mb': 2299.724609375, 'status': 'ok'}
+416.8s	166	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 735.0366821289062, 'q25_ms': 734.83642578125, 'q75_ms': 737.7572631835938, 'min_ms': 733.49755859375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 728.1092599999965, 'peak_extra_mb': 286.0625, 'peak_total_mb': 2442.787109375, 'status': 'ok'}
+417.0s	167	TIMING {'mode': 'cached', 'tol': 0.1, 'N': 8192, 'scope': 'transformer_hidden_state_prefill', 'method': 'cached', 'finite_output': True, 'median_ms': 735.0366821289062, 'q25_ms': 734.83642578125, 'q75_ms': 737.7572631835938, 'min_ms': 733.49755859375, 'reps': 5, 'warmup': 1, 'wall_call_ms': 728.1092599999965, 'peak_extra_mb': 286.0625, 'peak_total_mb': 2442.787109375, 'status': 'ok'}
+421.6s	168	QWEN PPL cached 0.2 2.5761699667195894 13.14668935327449
