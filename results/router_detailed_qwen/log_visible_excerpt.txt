@@ -9,93 +9,93 @@
 16.7s	9	HARDWARE Tesla T4 2.11.0+cu128
 16.7s	10	Cloning into '/kaggle/working/linear-attention-benchmark'...
 16.9s	11	Cloning into '/kaggle/working/linear-attention-benchmark'...
-16.9s	12	
+16.9s	12
 16.9s	13	Cloning into '/kaggle/working/linear-attention-benchmark'...
 17.6s	14	Note: switching to '68960ab'.
-17.6s	15	
+17.6s	15
 17.6s	16	You are in 'detached HEAD' state. You can look around, make experimental
 17.6s	17	changes and commit them, and you can discard any commits you make in this
 17.6s	18	state without impacting any branches by switching back to a branch.
-17.6s	19	
+17.6s	19
 17.6s	20	If you want to create a new branch to retain commits you create, you may
 17.6s	21	do so (now or later) by using -c with the switch command. Example:
-17.6s	22	
+17.6s	22
 17.6s	23	  git switch -c <new-branch-name>
-17.6s	24	
+17.6s	24
 17.6s	25	Or undo this operation with:
-17.6s	26	
+17.6s	26
 17.6s	27	  git switch -
-17.6s	28	
+17.6s	28
 17.6s	29	Turn off this advice by setting config variable advice.detachedHead to false
-17.6s	30	
+17.6s	30
 17.6s	31	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
 17.8s	32	Note: switching to '68960ab'.
-17.8s	33	
+17.8s	33
 17.8s	34	You are in 'detached HEAD' state. You can look around, make experimental
 17.8s	35	changes and commit them, and you can discard any commits you make in this
 17.8s	36	state without impacting any branches by switching back to a branch.
-17.8s	37	
+17.8s	37
 17.8s	38	If you want to create a new branch to retain commits you create, you may
 17.8s	39	do so (now or later) by using -c with the switch command. Example:
-17.8s	40	
+17.8s	40
 17.8s	41	  git switch -c <new-branch-name>
-17.8s	42	
+17.8s	42
 17.8s	43	Or undo this operation with:
-17.8s	44	
+17.8s	44
 17.8s	45	  git switch -
-17.8s	46	
+17.8s	46
 17.8s	47	Turn off this advice by setting config variable advice.detachedHead to false
-17.8s	48	
+17.8s	48
 17.8s	49	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
-17.8s	50	
+17.8s	50
 17.8s	51	Note: switching to '68960ab'.
-17.8s	52	
+17.8s	52
 17.8s	53	You are in 'detached HEAD' state. You can look around, make experimental
 17.8s	54	changes and commit them, and you can discard any commits you make in this
 17.8s	55	state without impacting any branches by switching back to a branch.
-17.8s	56	
+17.8s	56
 17.8s	57	If you want to create a new branch to retain commits you create, you may
 17.8s	58	do so (now or later) by using -c with the switch command. Example:
-17.8s	59	
+17.8s	59
 17.8s	60	  git switch -c <new-branch-name>
-17.8s	61	
+17.8s	61
 17.8s	62	Or undo this operation with:
-17.8s	63	
+17.8s	63
 17.8s	64	  git switch -
-17.8s	65	
+17.8s	65
 17.8s	66	Turn off this advice by setting config variable advice.detachedHead to false
-17.8s	67	
+17.8s	67
 17.8s	68	HEAD is now at 68960ab Add T4 results for adaptive-rank router, Qwen runs, report and README findings
 48.9s	69	.......................................                                                   [100%].....                                                   [100%]
 48.9s	70	22 passed in 24.11s
-49.1s	71	
+49.1s	71
 49.1s	72	22 passed in 24.11s
 62.6s	73	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 62.8s	74	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-62.8s	75	
+62.8s	75
 62.8s	76	Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 64.4s	77	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
 64.6s	78	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-64.6s	79	
+64.6s	79
 64.6s	80	[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-73.2s	81	
-73.4s	82	
-73.5s	83	
-73.5s	84	
-73.5s	85	
-77.5s	86	
-77.6s	87	
-77.6s	88	
-77.6s	89	
-77.6s	90	
-77.6s	91	
-77.6s	92	
-77.6s	93	
-77.6s	94	
-77.6s	95	
+73.2s	81
+73.4s	82
+73.5s	83
+73.5s	84
+73.5s	85
+77.5s	86
+77.6s	87
+77.6s	88
+77.6s	89
+77.6s	90
+77.6s	91
+77.6s	92
+77.6s	93
+77.6s	94
+77.6s	95
 78.8s	96	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
 79.0s	97	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
-79.0s	98	
+79.0s	98
 79.0s	99	[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
 81.8s	100	QWEN CAPTURE 0
 82.0s	101	QWEN CAPTURE 0
