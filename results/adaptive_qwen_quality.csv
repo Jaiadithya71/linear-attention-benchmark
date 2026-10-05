@@ -1,0 +1,8 @@
+variant,ctx,windows,tokens_scored,nll_per_token,perplexity,nonfinite_windows,heads_rank64,heads_rank256,heads_rank1024,heads_exact,heads_tol_not_met
+sdpa,2048,8,16376,2.4502758329882526,11.591543608411339,0,,,,,
+sdpa_mha,2048,8,16376,2.450317889699484,11.592031120865117,0,,,,,
+rf64,2048,8,0,nan,nan,8,,,,,
+rf256,2048,8,0,nan,nan,8,,,,,
+rf1024,2048,8,0,nan,nan,8,,,,,
+adaptive_rank,2048,8,0,nan,nan,8,0,0,2688,0,2688
+adaptive_rank_fb,2048,8,16376,2.450278263064088,11.59157177677558,0,0,16,5,2667,0

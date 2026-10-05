@@ -1,43 +1,33 @@
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
 [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
-Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:46,  2.72it/s]Loading weights:  51%|█████     | 147/290 [00:00<00:00, 405.57it/s]Loading weights:  79%|███████▉  | 230/290 [00:00<00:00, 452.57it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 381.34it/s]
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:56,  2.48it/s]Loading weights:  47%|████▋     | 137/290 [00:00<00:00, 356.93it/s]Loading weights:  75%|███████▍  | 217/290 [00:00<00:00, 427.23it/s]Loading weights:  99%|█████████▊| 286/290 [00:00<00:00, 448.90it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 368.28it/s]
 GPU: Tesla T4 | model Qwen/Qwen2.5-0.5B layers 24 heads 14 kv_heads 2
-Traceback (most recent call last):
-  File "/content/linear-attention-benchmark/run_qwen.py", line 87, in <module>
-    main()
-    ~~~~^^
-  File "/content/linear-attention-benchmark/run_qwen.py", line 37, in main
-    text = "\n\n".join(load_dataset("wikitext", "wikitext-2-raw-v1", split="test")["text"])
-                       ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1688, in load_dataset
-    builder_instance = load_dataset_builder(
-        path=path,
-    ...<10 lines>...
-        **config_kwargs,
-    )
-  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1315, in load_dataset_builder
-    dataset_module = dataset_module_factory(
-        path,
-    ...<5 lines>...
-        cache_dir=cache_dir,
-    )
-  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1207, in dataset_module_factory
-    raise e1 from None
-  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 1182, in dataset_module_factory
-    ).get_module()
-      ~~~~~~~~~~^^
-  File "/usr/local/lib/python3.13/dist-packages/datasets/load.py", line 598, in get_module
-    standalone_yaml_path = cached_path(
-        hf_dataset_url(self.name, config.REPOYAML_FILENAME, revision=self.commit_hash),
-        download_config=download_config,
-    )
-  File "/usr/local/lib/python3.13/dist-packages/datasets/utils/file_utils.py", line 180, in cached_path
-    ).resolve_path(url_or_filename)
-      ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/hf_file_system.py", line 306, in resolve_path
-    parsed = parse_hf_uri(f"{constants.HF_PROTOCOL}{path}")
-  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_hf_uris.py", line 319, in parse_hf_uri
-    return _parse_repo_body(location, type_, raw=raw)
-  File "/usr/local/lib/python3.13/dist-packages/huggingface_hub/utils/_hf_uris.py", line 617, in _parse_repo_body
-    raise HfUriError(uri=raw, msg=f"Repository id must be 'namespace/name', got '{repo_id}'.")
-huggingface_hub.errors.HfUriError: Invalid HF URI 'hf://datasets/wikitext@b08601e04326c79dfdd32d625aee71d232d685c3/.huggingface.yaml'. Repository id must be 'namespace/name', got 'wikitext'.
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (299078 > 131072). Running this sequence through the model will result in indexing errors
+{'variant': 'sdpa', 'N': 1024, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 153.65, 'median_ms': 141.78}
+{'variant': 'sdpa_mha', 'N': 1024, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 36.76, 'median_ms': 56.13}
+{'variant': 'local_window', 'N': 1024, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 52.91, 'median_ms': 72.88}
+{'variant': 'linear', 'N': 1024, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 55.15, 'median_ms': 77.96}
+{'variant': 'sdpa', 'N': 2048, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 565.54, 'median_ms': 448.67}
+{'variant': 'sdpa_mha', 'N': 2048, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 74.52, 'median_ms': 124.35}
+{'variant': 'local_window', 'N': 2048, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 104.94, 'median_ms': 150.43}
+{'variant': 'linear', 'N': 2048, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 110.99, 'median_ms': 160.54}
+{'variant': 'sdpa', 'N': 4096, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 2171.09, 'median_ms': 1702.31}
+{'variant': 'sdpa_mha', 'N': 4096, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 143.03, 'median_ms': 294.13}
+{'variant': 'local_window', 'N': 4096, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 209.0, 'median_ms': 324.54}
+{'variant': 'linear', 'N': 4096, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 220.42, 'median_ms': 340.04}
+{'variant': 'sdpa', 'N': 8192, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 8502.17, 'median_ms': 6707.99}
+{'variant': 'sdpa_mha', 'N': 8192, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 286.06, 'median_ms': 698.06}
+{'variant': 'local_window', 'N': 8192, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 417.13, 'median_ms': 632.09}
+{'variant': 'linear', 'N': 8192, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 440.78, 'median_ms': 651.43}
+{'variant': 'sdpa', 'N': 16384, 'status': 'oom'}
+{'variant': 'sdpa_mha', 'N': 16384, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 572.12, 'median_ms': 1945.58}
+{'variant': 'local_window', 'N': 16384, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 833.38, 'median_ms': 1269.61}
+{'variant': 'linear', 'N': 16384, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 881.5, 'median_ms': 1328.61}
+{'variant': 'sdpa', 'N': 32768, 'status': 'oom'}
+{'variant': 'sdpa_mha', 'N': 32768, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 1144.25, 'median_ms': 6266.72}
+{'variant': 'local_window', 'N': 32768, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 1665.88, 'median_ms': 2554.81}
+{'variant': 'linear', 'N': 32768, 'finite_output': True, 'status': 'ok', 'peak_extra_mb': 1762.94, 'median_ms': 2712.62}
+{'variant': 'sdpa', 'ctx': 2048, 'windows': 16, 'tokens_scored': 32752, 'nll_per_token': 2.537630074654315, 'perplexity': 12.64965667709094, 'nonfinite_windows': 0}
+{'variant': 'sdpa_mha', 'ctx': 2048, 'windows': 16, 'tokens_scored': 32752, 'nll_per_token': 2.537647688977009, 'perplexity': 12.649879494188001, 'nonfinite_windows': 0}
+{'variant': 'local_window', 'ctx': 2048, 'windows': 16, 'tokens_scored': 32752, 'nll_per_token': 4.117087702897915, 'perplexity': 61.3802242649039, 'nonfinite_windows': 0}
+{'variant': 'linear', 'ctx': 2048, 'windows': 16, 'tokens_scored': 32752, 'nll_per_token': 8.41912883540509, 'perplexity': 4532.952786622279, 'nonfinite_windows': 0}

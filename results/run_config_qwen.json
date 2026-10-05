@@ -1,0 +1,39 @@
+{
+  "stage": "qwen",
+  "started_utc": "2026-10-05T12:01:09+00:00",
+  "finished_utc": "2026-10-05T12:06:42+00:00",
+  "gpu_name": "Tesla T4",
+  "gpu_total_memory_bytes": 15637086208,
+  "gpu_compute_capability": "7.5",
+  "torch_version": "2.11.0+cu130",
+  "cuda_version": "13.0",
+  "cudnn_version": 92700,
+  "python_version": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "transformers_version": "5.17.0",
+  "git_commit": "561984f5a59a26543b2d14816f3c30d620dd7522",
+  "git_dirty": true,
+  "argv": [
+    "run_qwen.py",
+    "--require-gpu",
+    "T4"
+  ],
+  "args": {
+    "out": "results",
+    "require_gpu": "T4",
+    "model": "Qwen/Qwen2.5-0.5B",
+    "Ns": [
+      1024,
+      2048,
+      4096,
+      8192,
+      16384,
+      32768
+    ],
+    "window": 256,
+    "ppl_ctx": 2048,
+    "ppl_windows": 16,
+    "reps": 7,
+    "warmup": 2
+  }
+}
