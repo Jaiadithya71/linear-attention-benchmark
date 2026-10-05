@@ -34,7 +34,7 @@ def main():
     cfg = model.config
     print("GPU:", gpu, "| model", args.model, "layers", cfg.num_hidden_layers, "heads", cfg.num_attention_heads,
           "kv_heads", cfg.num_key_value_heads, flush=True)
-    text = "\n\n".join(load_dataset("wikitext", "wikitext-2-raw-v1", split="test")["text"])
+    text = "\n\n".join(load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1", split="test")["text"])
     ids_all = tok(text, return_tensors="pt").input_ids[0]
     need = max(max(args.Ns), args.ppl_ctx * args.ppl_windows)
     if ids_all.numel() < need:

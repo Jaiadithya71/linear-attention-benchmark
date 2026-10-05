@@ -169,7 +169,7 @@ def part_qwen(args, out):
     from lab.qwen_patch import patched_attention, ROUTER_STATS
     tok = AutoTokenizer.from_pretrained(args.model)
     model = AutoModelForCausalLM.from_pretrained(args.model, torch_dtype=torch.float16, attn_implementation="sdpa").cuda().eval()
-    text = "\n\n".join(load_dataset("wikitext", "wikitext-2-raw-v1", split="test")["text"])
+    text = "\n\n".join(load_dataset("Salesforce/wikitext", "wikitext-2-raw-v1", split="test")["text"])
     ids_all = tok(text, return_tensors="pt").input_ids[0]
     need = max(max(args.qwen_Ns), args.ppl_ctx * args.ppl_windows)
     if ids_all.numel() < need:
