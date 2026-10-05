@@ -33,8 +33,8 @@ The router works per input (per batch element and head): it computes exact softm
 in ascending order, and accepts the first rank whose output on the probes has mean relative L2 error <= tol (fixed at 0.1 before
 any run; a tol sweep is also reported). Inputs that fail every rank are either answered with the largest rank anyway and flagged
 `tol_not_met` (`adaptive_rank`), or with exact attention (`adaptive_rank_fb`). Probe cost and discarded lower-rank attempts count
-in the measured latency and memory. It is compared with fixed-rank `rf64/rf256/rf1024` and exact SDPA on efficiency (two input
-regimes: uniform scale and per-head mixed scales), the retrieval task, and real Qwen2.5-0.5B prefill + perplexity.
+in the measured latency and memory. It is compared with fixed-rank `rf64/rf256/rf1024` and exact SDPA on efficiency (three input
+regimes: small scale 0.25, per-head mixed scales 0.1-1.0, and scale 1.0; the regimes were fixed after a first T4 run showed that unit-Gaussian inputs, where |x|~8, defeat random features at every rank), the retrieval task, and real Qwen2.5-0.5B prefill + perplexity.
 Random-feature attention is computed in fp32 internally for both input dtypes. In retrieval the probe queries are
 `beta * random keys` (same distribution as the real query, never the query itself).
 

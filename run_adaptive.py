@@ -20,7 +20,9 @@ RET = ["N", "method", "dtype", "beta", "tol", "trials", "successes", "accuracy",
 QPF = ["variant", "N", "status", "median_ms", "q25_ms", "q75_ms", "min_ms", "reps", "warmup", "peak_extra_mb",
        "peak_total_mb", "finite_output"] + RANKCOLS
 QQF = ["variant", "ctx", "windows", "tokens_scored", "nll_per_token", "perplexity", "nonfinite_windows"] + RANKCOLS
-HEAD_SCALES = [0.25, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0]
+# q and k are multiplied by a per-head scale. Random features approximate exp(q.k/sqrt(D)) well only when |q||k| is small;
+# regimes were fixed AFTER a first T4 run showed that scale 1.0 (unit-Gaussian, |x|~8) defeats every rank (relative error > 3).
+REGIMES = {"small": [0.25] * 8, "mixed": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1.0], "large": [1.0] * 8}
 
 
 def counts(info):
@@ -59,12 +61,12 @@ def run_variant(spec, q, k, v, causal=False, probe_q=None):
 def part_efficiency(args, out):
     rows = []
     var = variants(args.tol_sweep, args.tol)
-    for regime in ("unit", "mixed"):
+    for regime in REGIMES:
         for dname, dt in (("fp32", torch.float32), ("fp16", torch.float16)):
             for N in args.Ns:
                 g = torch.Generator(device="cuda").manual_seed(args.seed * 1000003 + N)
                 q, k, v = (torch.randn(1, 8, N, 64, device="cuda", generator=g) for _ in range(3))
-                sc = torch.tensor(HEAD_SCALES if regime == "mixed" else [1.0] * 8, device="cuda").view(1, 8, 1, 1)
+                sc = torch.tensor(REGIMES[regime], device="cuda").view(1, 8, 1, 1)
                 q, k = (q * sc).to(dt), (k * sc).to(dt)
                 v = v.to(dt)
                 ref = A.sdpa_attention(q.float(), k.float(), v.float()) if N <= args.ref_max_n else None
